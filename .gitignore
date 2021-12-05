@@ -1,0 +1,12 @@
+
+"""private config files"""
+.env
+.flaskenv
+config.py
+
+""" generated code """
+__pycache__
+/app/__pycache__
+
+"""dev environment"""
+/venv
