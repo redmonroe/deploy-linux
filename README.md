@@ -1,8 +1,8 @@
 # deploy-linux
 
-This is a simple minimal flask app.
+This is a simple minimal Flask app. Flask is an application that allows a programmer to quickly create the basic structure of a website and can comprehend a range of extensions that adds functionality as your website grows.    
 
-It can be used to practice deployments.
+This particular implementation is deliberately simple and can be used to practice deployments in local environments and to remote servers.  
 
 ## Install Manual Ubuntu/Bash
 
@@ -20,10 +20,9 @@ Configuring development environment
 ```
 $ cd deploy-linux
 $ python3 -m venv venv
-
 ```
 
-Activating environment and Installing dependencies with pip
+Activating environment and installing dependencies with pip
 
 ```
 $ source venv/bin/activate
@@ -36,9 +35,9 @@ Configuring Flask development server
 $ export FLASK_APP=deploy.py
 $ export FLASK_ENV=development
 
-# Alternately, you may use python-dotenv (part of the above installation of dependencies) # to set environmental variables defined in .env
+# Alternately, you may use the package called python-dotenv (part of the above installation of dependencies) to set environmental variables defined in .env
 
-$ mv .sample-env .env  /rename file .env which flask can see
+$ mv .sample-env .env  #rename file .env which flask can see
 
 # in .env file place the FLASK_APP & FLASK_ENV lines from above
 ```
