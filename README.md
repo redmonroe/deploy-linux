@@ -36,9 +36,20 @@ Configuring Flask development server
 $ export FLASK_APP=deploy.py
 $ export FLASK_ENV=development
 
-Alternately, you may use python-dotenv (part of the above installation of dependencies) to set environmental variables defined in .env
+# Alternately, you may use python-dotenv (part of the above installation of dependencies) # to set environmental variables defined in .env
 
-mv .sample-env .env  /rename file .env which flask can see
+$ mv .sample-env .env  /rename file .env which flask can see
 
 # in .env file place the FLASK_APP & FLASK_ENV lines from above
 ```
+
+Start Flask
+
+If your configuration is successful, you can start the Flask development server by typing:
+
+```
+$ flask run
+```
+If all is well, you will see the server start noting "serving Flask app 'deploy.py' (lazy loading)" and "Environment: development".  
+
+You will then be able to access the minimal route provided in this package by opening your browser and entering "http:\\\127.0.0.0:5000".  You will see the text "flask-deploy-linux".
