@@ -42,7 +42,7 @@ $ mv .sample-env .env  #rename file .env which flask can see
 # in .env file place the FLASK_APP & FLASK_ENV lines from above
 ```
 
-##Start Flask
+## Start Flask
 
 If your configuration is successful, you can start the Flask development server by typing:
 
