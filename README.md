@@ -6,7 +6,4 @@ This particular implementation is deliberately simple and can be used to practic
 
 ## Setup Second Routes
 
-```
-$ mkdir dlinux && cd dlinux
-$ git clone https://github.com/redmonroe/deploy-linux.git
-```
+This branch is implemented with a second flask route to demonstrate that remote serve is serving routes properly. See routes.py for changes.
