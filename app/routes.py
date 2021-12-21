@@ -1,9 +1,10 @@
 from app import app
+from flask import render_template
 
 @app.route('/')
 @app.route('/index')
 def index():
-    return "flask-deploy-linux!"
+    return render_template('index.html', title='Big B!')
 
 @app.get('/home')
 def home():
