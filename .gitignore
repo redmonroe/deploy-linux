@@ -7,6 +7,9 @@ config.py
 """ generated code """
 __pycache__
 /app/__pycache__
+/migrations
+*.swp
+*.swo
 
 """dev environment"""
 /venv
