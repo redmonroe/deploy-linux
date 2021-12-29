@@ -12,18 +12,8 @@ class Categories(db.Model):
     id = db.Column(db.Integer, primary_key=True )
     name = db.Column(db.String)
     inorex = db.Column(db.String)
-    # user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
         spacer = '**'
         return f'{self.name:-^40} {spacer:>2} {self.inorex:^20}'
 
-
-cat = Categories()
-cat.name = 'test'
-db.session.add(cat)
-db.session.commit()
-
-result = Categories.query.all()
-for item in result:
-    print(item)
