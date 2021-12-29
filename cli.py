@@ -2,7 +2,7 @@ from sqlalchemy import inspect, create_engine
 from datetime import date
 import click
 from config import Config
-from deploy import db, Categories
+from app.models import db, Categories
 
 @click.group()
 def cli():
@@ -14,3 +14,8 @@ def database_test():
     table_names = inspect(db.engine).get_table_names()
     for item in table_names:
         print(item)
+
+cli.add_command(database_test)
+
+if __name__ == '__main__':
+    cli()
