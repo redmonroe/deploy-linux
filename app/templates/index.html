@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ title }}</title>
-  </head>
-  <body>
-    <h1>{{ title }}</h1>
-    <a href="https://imgur.com/1qZ57Dm"
-      ><img src="https://imgur.com/1qZ57Dm" title="source: imgur.com"
-    /></a>
-  </body>
+<head>
+    <title>Apartment Marketing</title>
+</head>
+<body>
+    <h1>Welcome to Our Apartment Building!</h1>
+    <p>We have a range of comfortable apartments to choose from. Come and experience a luxurious lifestyle with these amenities:</p>
+    <ul>
+        <li>Swimming Pool</li>
+        <li>Gym</li>
+        <li>Spa</li>
+        <li>Parking</li>
+    </ul>
+
+    <!-- Insert images using Flask-Images -->
+    <img src="{{ images.url('image1.jpg') }}" alt="Apartment 1">
+
+</body>
 </html>
