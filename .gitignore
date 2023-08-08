@@ -8,8 +8,13 @@ config.py
 __pycache__
 /app/__pycache__
 /migrations
+
+*.save
+*.pem
 *.swp
 *.swo
+*.conf
 
 """dev environment"""
 /venv
+/certs
