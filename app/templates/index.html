@@ -2,6 +2,13 @@
 <html>
 <head>
     <title>Apartment Marketing</title>
+      <style>
+        /* Define a CSS class for the thumbnail image */
+        .thumbnail {
+            width: 20px; /* Adjust the width as needed */
+            height: auto; /* Automatically adjust height to maintain aspect ratio */
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Our Apartment Building!</h1>
@@ -14,7 +21,10 @@
     </ul>
 
     <!-- Insert images using Flask-Images -->
-    <img src="{{ images.url('image1.jpg') }}" alt="Apartment 1">
+    <img src="{{ url_for('static', filename='cd_2.jpg') }}" alt="Apartment 1">
+    <img src="{{ url_for('static', filename='IMG_2152.jpg') }}" alt="Apartment 1" >
+    <img src="{{ url_for('static', filename='eho_signage.png') }}" alt="Apartment 1" class="thumbnail">
+
 
 </body>
 </html>
