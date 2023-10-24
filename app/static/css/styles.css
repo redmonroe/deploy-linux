@@ -1,0 +1,35 @@
+/* Apply some basic styles to the navigation bar */
+.navbar {
+    background-color: #333; /* Set the background color */
+    position: fixed; /* Fix the navigation bar at the top of the viewport */
+    top: 0; /* Place it at the top */
+    width: 100%; /* Make it full width */
+    z-index: 100; /* Ensure it's above other content */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove list bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between items */
+}
+
+.navbar a {
+    color: #fff; /* Set link text color */
+    text-decoration: none; /* Remove underline */
+}
+
+
+/* Define a CSS class for the thumbnail image */
+.thumbnail {
+    width: 20px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+.thumbnail2 {
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
