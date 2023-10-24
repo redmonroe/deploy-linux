@@ -9,7 +9,11 @@ def index():
 
 @app.route('/marketing')
 def marketing():
-    return render_template('new_index.html')
+    return render_template('index_main.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 
 @app.get('/home')

@@ -16,6 +16,7 @@
 .navbar li {
     display: inline; /* Display list items horizontally */
     margin-right: 20px; /* Add spacing between items */
+    color: #fff; /* Set link text color */
 }
 
 .navbar a {
