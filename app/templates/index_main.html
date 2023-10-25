@@ -5,26 +5,28 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <div class="navbar">
-    <ul>
-        <li>&nbsp;&nbsp;(317) 925-5558</li>
-        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
-    </ul>
-    </div>
-<h1>Senior Housing</h1>
-    
-    
-    <p>We have a range of comfortable apartments to choose from. Come and experience a luxurious lifestyle with these amenities:</p>
-    <ul>
-        <li>Swimming Pool</li>
-        <li>Gym</li>
-        <li>Spa</li>
-        <li>Parking</li>
-    </ul>
+    <nav class="navbar">
+        <ul>
+            <li>Fall Creek Village I</li>
+            <li>(317) 925-5558</li>
+            <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        </ul>
+    </nav>
 
-    <!-- Insert images using Flask-Images -->
-    <img src="{{ url_for('static', filename='cd_1.jpg') }}" alt="Apartment 1" class="thumbnail2">
-    <img src="{{ url_for('static', filename='IMG_2152.jpg') }}" alt="Apartment 1" class="thumbnail2" >
+    <div class="image-container">
+        <img src="/static/pt_header_crop.png" alt="Background Image">
+    </div>
+
+    <div class="background-container">
+
+        <div class="container">
+            <h1 class="main-title">Senior Housing</h1>
+            <h1>safe, accessible housing for individuals 62 years of age or older</h1>      
+        </div>
+    </div>
+        
+        <!-- Insert images using Flask-Images -->
+        <img src="{{ url_for('static', filename='cd_1.jpg') }}" alt="Apartment 1" class="thumbnail">
     <img src="{{ url_for('static', filename='eho_signage.png') }}" alt="Apartment 1" class="thumbnail">
 
 

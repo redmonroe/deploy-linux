@@ -14,6 +14,8 @@ __pycache__
 *.swp
 *.swo
 *.conf
+*.png
+*.jpg
 
 """dev environment"""
 /venv
