@@ -5,18 +5,49 @@
      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
   </head>
   <body>
-    <h1>Contact Information:</h1>
-    <ul class="no-bullets">
-        <li class="bold-item">Fall Creek Village I</li>
-        <li>Attn: Office</li>
-        <li>3515 N. Pennsylvania St.</li>
-        <li>Indianapolis, IN 46205</li>
-        <hr>
-        <li>phone: (317) 925-5558</li>
-        <li>email: inbox@vistulaofindiana.com</li>
-        <li>fax: (317) 203-7000</li>
-        <li>tty: 711 or (800) 743-3333</li>
-    </ul>
+    <nav class="navbar">
+        <ul>            
+            <li>Fall Creek Village I</li>
+            <li>(317) 925-5558</li>
+            <li>TTY: 711 or (800) 743-3333</li>
+            <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            <li>
+                <img src="{{ url_for('static', filename='eho_signage.png') }}" alt="Apartment 1" class="thumbnail-invert">
+            </li>
+        </ul>
+    </nav>
+    <div class="image-container">
+        <img src="/static/pt_green_door_final2.jpg" alt="Background Image">
+    </div>
+
+
+      <div class="contact-container">
+        <h1>Contact Information:</h1>
+        <ul class="no-bullets">
+          <li class="bold-item">Fall Creek Village I</li>
+          <li>Attn: Office</li>
+          <li>3515 N. Pennsylvania St.</li>
+          <li>Indianapolis, IN 46205</li>
+          <hr>
+          <li>phone: (317) 925-5558</li>
+          <li>email: inbox@vistulaofindiana.com</li>
+          <li>fax: (317) 203-7000</li>
+          <li>tty: 711 or (800) 743-3333</li>
+          <hr>
+          <li class="bold-item"><a href="{{ url_for('marketing')}}">back to home</a></li>
+        </ul>
+    </div>
+      <nav class="footer">
+        <ul>            
+            <li>Fall Creek Village I</li>
+            <li>(317) 925-5558</li>
+            <li>TTY: 711 or (800) 743-3333</li>
+            <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            <li>
+                <img src="{{ url_for('static', filename='eho_signage.png') }}" alt="Apartment 1" class="thumbnail-invert">
+            </li>
+        </ul>
+    </nav>
 
     
   </body>

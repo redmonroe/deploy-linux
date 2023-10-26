@@ -12,7 +12,40 @@ body {
     z-index: 100; /* Ensure it's above other content */
     display: flex;
     justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+    align-items: center; /* Center vertically */
+}
+
+.footer {
+    background-color: #333; /* Set the background color */
+    bottom: 0; /* Place it at the bottom */
+    width: 100%; /* Make it full width */
+    height: 60px; /* Adjust the height as needed */
+    z-index: 100; /* Ensure it's above other content */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #fff; /* Set text color */
+    
+}
+
+.footer ul {
+    list-style-type: none; /* Remove list bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.footer li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 40px; /* Add spacing between items */
+    color: #fff; /* Set link text color */
+}
+
+.footer a {
+    color: #fff; /* Set link text color */
+    text-decoration: none; /* Remove underline */
+
 }
 
 .navbar ul {
@@ -48,9 +81,14 @@ body {
     padding-top: 5px;
 }
 
-.thumbnail2 {
+.portrait {
     width: 400px; /* Adjust the width as needed */
     height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+
+.portrait-list {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Optionally, remove padding if there's any */
 }
 
 /* styles.css */
@@ -72,11 +110,23 @@ body {
 
 .background-container {
     margin-left: 15%;
-    margin-bottom: 275px;    
+    margin-bottom: 200px;    
 }
 
 .main-title {
+    border: 2px solid #000000;
     font-size: 80px; /* Adjust the font size as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color with opacity */
+    padding: 10px; /* Add padding to create space around the text */
+    width: 50%; /* Adjust the width as needed */
+}
+
+.sub-title {
+    border: 2px solid #000000;
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color with opacity */
+    padding: 10px; /* Add padding to create space around the text */
+    width: 50%; /* Adjust the width as needed */
+    
 }
 
 .container {
@@ -104,6 +154,8 @@ body {
 }
 
 .main-text {
+    border: 1px solid #000000;
+    background-color: rgba(255, 255, 255, 0.9); /* Set the background color with opacity */
     font-size: 20px;
     max-width: 6in; /* Set the maximum width for the container */
     margin-left: 15%; /* Center the container horizontally */
@@ -111,10 +163,12 @@ body {
     text-indent: 20px; /* Add an indent of 20 pixels */
     line-height: 1.4; /* Adjust the line-height value as needed */
     width: 65%; /* Adjust the width as needed */
+    padding: 20px;
 }
 
 
 .info-block {
+    border: 1px solid #000000;
     background-color: #cce6ff; /* Light blue background */
     padding: 20px; /* Add padding for spacing */
     width: 20%; /* Adjust the width as needed */
@@ -122,3 +176,59 @@ body {
     line-height: 1.4; /* Adjust the line-height value as needed */
 }
 
+.portrait-container {
+    margin-top: 150px; /* Adjust the value to create the desired space */
+    /* margin-left: 5%; */
+}
+
+.intro-box {
+    border: 1px solid #000000;
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with opacity */
+    max-width: 4.5in; /* Set the maximum width for the container */
+    margin-left: 15%; /* Center the container horizontally */
+    margin-top: 5px;
+    text-align: justify; /* Justify the text for better spacing */
+    line-height: 1.4; /* Adjust the line-height value as needed */
+    width: 65%; /* Adjust the width as needed */
+    padding: 20px;
+    
+}
+
+.cd-box {
+    border: 1px solid #000000;
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with opacity */
+    max-width: 4.5in; /* Set the maximum width for the container */
+    margin-left: 15%; /* Center the container horizontally */
+    text-align: justify; /* Justify the text for better spacing */
+    line-height: 1.4; /* Adjust the line-height value as needed */
+    width: 65%; /* Adjust the width as needed */
+    padding: 20px;
+    
+}
+
+.pt-box {
+    border: 1px solid #000000;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 4.5in; /* Set the maximum width for the container */
+    margin-left: 15%; 
+    margin-bottom: 100px; /* Center the container horizontally */
+    text-align: justify; /* Justify the text for better spacing */
+    line-height: 1.4; /* Adjust the line-height value as needed */
+    width: 65%; /* Adjust the width as needed */
+    padding: 20px;
+    
+}
+
+.contact-outer {
+    /* margin-top: 100px; */
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    max-width: 6in; /* Set the maximum width for the container */
+    border: 1px solid #000000;
+    margin-top: 60px; /* Adjust the value to create the desired space */
+    margin-left: 15%;
+    margin-bottom: 600px;    
+}

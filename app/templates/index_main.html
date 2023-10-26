@@ -24,8 +24,8 @@
     <div class="background-container">
         
         <div class="container">
-            <h1 class="main-title">Senior Housing</h1>
-            <h1>safe, accessible housing for individuals 62 years of age or older</h1>      
+            <h1 class="main-title">Fall Creek Village I</h1>
+            <h1 class="sub-title">safe, accessible housing for individuals 62 years of age or older</h1>      
         </div>
     </div>
     
@@ -34,8 +34,9 @@
             <p>Fall Creek Village I provides affordable housing opportunities for older adults.
                 Our apartments are available for individuals who are 62 years of age or older as well as those who are mobility impaired. 
                 The apartments are safe and affordable studio, one-bedroom, and two-bedroom apartments.</p>
-        </div>
-        <div class="info-block">
+                <p>Application by appointment.  Please call (317) 925-5558 to schedule. </p>
+            </div>
+            <div class="info-block">
             <h3>General Eligibility Criteria:</h3>
             <ul>            
                 <li>62 years of age or older OR mobility impaired</li>
@@ -47,8 +48,51 @@
         </div>
     </div>
     
+    <div class="portrait-container">
+        <div class="intro-box">
+            <h3>Fall Creek Village I</h3>
+            <p>
+                Our apartments are located on the near Northside of Indianapolis.
+            </p>
+        </div>
+        <div class="cd-box">
+            <img src="{{ url_for('static', filename='cd_1.jpg') }}" alt="Apartment 1" class="portrait" border="3px">
+            <h3>The Commodore</h3>
+            <ul class="portrait-list">            
+                <li>3015 N. Meridian St.</li>
+                <li>Indianapolis, IN 46208</li>
+                <hr>
+                <li>Located across the street from The Children's Museum</li>
+                <hr>
+                <li>Application by appointment. Please call (317)925-5558 to schedule.</li>
+            </ul>
+        </div>
+        <div class="pt-box">
+            <img src="{{ url_for('static', filename='IMG_2152.jpg') }}" alt="Apartment 1" class="portrait" border="3px">
+            <h3>Penn Terrace</h3>
+            <ul class="portrait-list">            
+                <li>3515 N. Pennsylvania St.</li>
+                <li>Indianapolis, IN 46205</li>
+                <hr>
+                <li>Located near Shortridge High School</li>
+                <hr>
+                <li>Application by appointment. Please call (317)925-5558 to schedule.</li>
+            </ul>
+        </div>
+    </div>
     
-    <img src="{{ url_for('static', filename='cd_1.jpg') }}" alt="Apartment 1" class="thumbnail">
+    <nav class="footer">
+        <ul>            
+            <li>Fall Creek Village I</li>
+            <li>(317) 925-5558</li>
+            <li>TTY: 711 or (800) 743-3333</li>
+            <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            <li>
+                <img src="{{ url_for('static', filename='eho_signage.png') }}" alt="Apartment 1" class="thumbnail-invert">
+            </li>
+        </ul>
+    </nav>
+    
     
     
 </body>
