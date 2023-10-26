@@ -6,29 +6,50 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul>
+        <ul>            
             <li>Fall Creek Village I</li>
             <li>(317) 925-5558</li>
+            <li>TTY: 711 or (800) 743-3333</li>
             <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+            <li>
+                <img src="{{ url_for('static', filename='eho_signage.png') }}" alt="Apartment 1" class="thumbnail-invert">
+            </li>
         </ul>
     </nav>
-
+    
     <div class="image-container">
-        <img src="/static/pt_header_crop.png" alt="Background Image">
+        <img src="/static/pt_green_door_final2.jpg" alt="Background Image">
     </div>
-
+    
     <div class="background-container">
-
+        
         <div class="container">
             <h1 class="main-title">Senior Housing</h1>
             <h1>safe, accessible housing for individuals 62 years of age or older</h1>      
         </div>
     </div>
-        
-        <!-- Insert images using Flask-Images -->
-        <img src="{{ url_for('static', filename='cd_1.jpg') }}" alt="Apartment 1" class="thumbnail">
-    <img src="{{ url_for('static', filename='eho_signage.png') }}" alt="Apartment 1" class="thumbnail">
-
-
+    
+    <div class="content-container">
+        <div class="main-text">
+            <p>Fall Creek Village I provides affordable housing opportunities for older adults.
+                Our apartments are available for individuals who are 62 years of age or older as well as those who are mobility impaired. 
+                The apartments are safe and affordable studio, one-bedroom, and two-bedroom apartments.</p>
+        </div>
+        <div class="info-block">
+            <h3>General Eligibility Criteria:</h3>
+            <ul>            
+                <li>62 years of age or older OR mobility impaired</li>
+                <li>Income below HUD income limits</li>
+                <li>Demonstrate ability to abide terms of lease</li>
+                <li>Able to pass credit, criminal, and landlord history (if applicable)</li>
+                <li>Ability to pay relevant utilities</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <img src="{{ url_for('static', filename='cd_1.jpg') }}" alt="Apartment 1" class="thumbnail">
+    
+    
 </body>
 </html>
